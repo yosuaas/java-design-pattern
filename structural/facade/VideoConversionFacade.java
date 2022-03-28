@@ -8,7 +8,7 @@ import structural.facade.complex_library_example.CodecFactory;
 import structural.facade.complex_library_example.MPEG4CompressionCodec;
 import structural.facade.complex_library_example.OggCompressionCodec;
 import structural.facade.complex_library_example.VideoFile;
-import structural.facade.constant.FormatConst;
+import structural.facade.constant.VideoFormatConst;
 
 public class VideoConversionFacade {
   public File convertVideo(String fileName, String format) {
@@ -18,7 +18,7 @@ public class VideoConversionFacade {
     Codec sourceCodec = CodecFactory.extract(videoFile);
     Codec destinationCodec;
 
-    if (format.equals(FormatConst.MP4)) {
+    if (format.equals(VideoFormatConst.MP4)) {
       destinationCodec = new MPEG4CompressionCodec();
     } else {
       destinationCodec = new OggCompressionCodec();

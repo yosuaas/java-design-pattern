@@ -1,7 +1,7 @@
 package structural.facade.complex_library_example;
 
-import structural.facade.constant.FormatConst;
+import structural.facade.constant.VideoFormatConst;
 
 public class MPEG4CompressionCodec implements Codec {
-  public String type = FormatConst.MP4;
+  public String type = VideoFormatConst.MP4;
 }
